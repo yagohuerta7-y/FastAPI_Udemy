@@ -35,7 +35,7 @@ def list_posts(query: str | None = Query(default=None, description='Texto para b
 
 # TODO Agregar un query parameter para filtrar si queremos el contenido o no   
 @app.get('/post/{post_id}')
-def get_post(post_id: int, query: int | None = Query(default=None, description='0 si no quieres el contenido, 1 si lo quieres')):
+def get_post(post_id: int, query: int | None = Query(default=1, description='0 si no quieres el contenido, 1 si lo quieres')):
     '''
     Metodo GET para obtener un post especifico a partir del 'id'
     '''
