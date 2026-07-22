@@ -1,0 +1,12 @@
+$kind: http-request
+name: PUT post
+url: http://127.0.0.1:8000/post/3
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "title": "El fin de la era de Messi desde Postman",
+        "content": "Viva Europa desde Mexico"
+    }
+order: 2639529289328037

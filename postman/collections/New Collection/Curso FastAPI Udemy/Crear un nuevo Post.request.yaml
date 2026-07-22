@@ -1,0 +1,13 @@
+$kind: http-request
+name: Crear un nuevo Post
+description: ""
+url: http://127.0.0.1:8000/post
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "title": "Nuevo post desde Postman",
+        "content": "Este post fue creado desde la app de Postman en Linux"
+    }
+order: 1784689134037
